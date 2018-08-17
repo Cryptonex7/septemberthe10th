@@ -78,7 +78,7 @@
     box-sizing: border-box;
     position: sticky;
     top:0;
-    background: #000000;
+    background: #000000e2;
 }
 
 @media screen and (min-width: 30em) {
