@@ -1,0 +1,52 @@
+
+@import url(./variables.css);
+
+@keyframes glow-bkg {
+    0% {
+        filter: drop-shadow(4px 4px 1px var(--ac-white));
+    }
+    50% {
+        filter: drop-shadow(4px 4px 8px var(--ac-white));
+        
+    }
+    100% {
+        filter: drop-shadow(4px 4px 1px var(--ac-white));
+    }
+}
+@keyframes glow-bkg-mob {
+    0% {
+        filter: drop-shadow(4px 4px 0px var(--ac-white));
+    }
+    50% {
+        filter: drop-shadow(4px 4px 6px var(--ac-white));
+        
+    }
+    100% {
+        filter: drop-shadow(4px 4px 0px var(--ac-white));
+    }
+}
+
+.BackgroundLogo {
+    animation: glow-bkg 6000ms ease-in-out infinite;
+    width: 20%;
+    margin: 2%;
+}
+
+.caption{
+    /* animation: glow-bkg 6000ms ease-in-out infinite; */
+    width: 70%;
+    margin: 2%;
+}
+
+@media only screen  and (max-width: 1000px){
+    .fixed-container{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .BackgroundLogo {
+        margin-left: -32px;
+        animation: glow-bkg-mob 6000ms ease-in-out infinite;
+    
+    }
+}
