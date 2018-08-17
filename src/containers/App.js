@@ -3,6 +3,8 @@ import NavBar from '../components/Home/NavBar/NavBar';
 import MainContainer from './MainContainer'
 import Friends from './Friends';
 import WebDesign from './WebDesign';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 import '../css/App.css';
 
 import '../css/Card.css';
@@ -10,9 +12,10 @@ import '../css/IntroBar.css';
 import '../css/Subscribe.css';
 
 
+
 class App extends Component {
   state = { 
-    page: 'friends'
+    page: 'home'
 	}
   
 	navChangePageHome = ()=> {
@@ -63,10 +66,12 @@ class App extends Component {
   render() {
     
     return (
-      <div className="App">
-				<NavBar home = {this.navChangePageHome} gallery = {this.navChangePageGallery} friends = {this.navChangePageFriends}/>
-        {this.PAGE_STATES[this.state.page]}
-      </div>
+				<div className="App">
+					<NavBar home = {this.navChangePageHome} gallery = {this.navChangePageGallery} friends = {this.navChangePageFriends}/>
+					<ParallaxProvider>
+						{this.PAGE_STATES[this.state.page]}
+					</ParallaxProvider>
+				</div>
     );
   }
 }

@@ -20,6 +20,9 @@
     color: #4d4d4f;
     font-size: .875rem;
     display: inline-block;
+    margin: 0 4%;
+    font-weight: bolder;
+    line-height: 15px;
 }
 
 .link:link, .link:visited {
@@ -64,6 +67,7 @@
 
 .nav-active{
     color : var(--ac-primary);
+    border-bottom: 1px solid var(--ac-primary);
 }
 
 .nav{
@@ -72,6 +76,9 @@
     display: table; 
     width: 100%;
     box-sizing: border-box;
+    position: sticky;
+    top:0;
+    background: #000000;
 }
 
 @media screen and (min-width: 30em) {

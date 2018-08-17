@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BackgroundLogo from '../components/Home/BackgroundLogo/BackgroundLogo';
 import StartButton from '../components/Home/StartButton/StartButton';
-
+import Footer from './Footer';
 
 
 
@@ -59,11 +59,12 @@ class MainContainer extends Component {
                         
                         <BackgroundLogo/><br/>
                         <StartButton/>
-                        
+                        <Footer/>
                     </div>
                 :
                     <div>
                         <BackgroundLogo/>
+                        <Footer/>
                     </div>
                 }
                 </div>
