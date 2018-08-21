@@ -22,12 +22,12 @@ class MainContainer extends Component {
                 Shivangi : {
                 name: 'Shivangi',
                 image: `${cat1}`,
-                message: " Integer ullamcorper porta nibh id malesuada. Integer ultrices dolor lacus, nec accumsan tellus convallis ac. Morbi mauris nisi, fermentum ut risus nec, rhoncus sollicitudin augue. Morbi eu varius massa. Fusce nisl tortor, condimentum et finibus vitae, condimentum eget diam. Praesent eu massa quis quam eleifend laoreet a eu orci. Curabitur pulvinar tellus ex, nec pretium sapien interdum id. Cras dictum vestibulum gravida. Pellentesque dignissim arcu eu mauris placerat, non viverra nibh sollicitudin. Cras molestie ante non massa rutrum tristique. Vestibulum in magna congue, faucibus mi ut, pulvinar sapien. Nam ullamcorper sapien at interdum vestibulum. Vivamus nisl odio, egestas eget nisi ac, sodales aliquet libero. Vestibulum eu elementum velit.",
+                message: "I have no words, no song or poem to describe our friendship and my love for you Because i have seen no one else like us. You were my first friend, the first one to bear my unbearable behaviour. You have always been there for me even though I have not been the best of myself ever. No one has made me cry as much as you have ,when you were crying or you were in pain. Also I have seen no one else with your crying capacity as well. It’s your birthday today and I know we still are going to just sleep at our place but I ll try my best to make this special. I know we will always be like this or even better if that’s possible. Also with our taste of guys, we are probably marrying each other at the end, so here is to our marriage, I love you wifeeyyy !",
                 },
                 Vaibhav: {
                 name: 'Vaibhav',
                 image: `${cat2}`,
-                message: " Phasellus convallis, justo ultricies tincidunt tempor, nulla purus dapibus dolor, in condimentum leo arcu in nunc. Aliquam hendrerit tempus magna, vel vulputate arcu iaculis vitae. Nunc congue auctor purus et luctus. Pellentesque et eleifend libero, facilisis pulvinar lorem. Donec feugiat viverra est, sit amet feugiat tortor euismod faucibus. Cras ultricies suscipit libero nec accumsan. Maecenas faucibus neque nec nisl vehicula, vel iaculis ante tempus.",
+                message: "Heyy bharii huii! Happy birthdaayyy My time pass in college 8 saal se chep h tu 🤦🏻‍ topper kahinki But you know you’re like my only true friend jiske koi befaltu ke drame nhi jaise bolo krleti h😂 Humari bachpan ki baatein😆😂😂 And i never said this but you’re the onlyy best friend i have in my life right now! I still remember humari 9th 10th ki baatein😂 fir 11th mei jab tu gyi to kitna naraaz hua tha mai! Kitna bola tha mat jaa mat jaa😂 but waqt ne kia ye haseen sitamb ki hum college mei saath aagye (Jo maine pehle hi bola tha) 😂😂 coz i knew we were inseparable❤ I love you bharii huii😘 thankyou so much for being there for me always❤",
                 },
                 Anujeet :{
                 name: 'Anujeet',
@@ -79,7 +79,4 @@ class MainContainer extends Component {
 
 export default MainContainer;
 
-
-
-    
     

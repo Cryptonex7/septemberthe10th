@@ -68,6 +68,7 @@
 .nav-active{
     color : var(--ac-primary);
     border-bottom: 1px solid var(--ac-primary);
+    
 }
 
 .nav{
