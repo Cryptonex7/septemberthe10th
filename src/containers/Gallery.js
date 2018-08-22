@@ -106,95 +106,95 @@ export default class Sample extends React.Component {
    
     navChangePageGal = ()=> {
         this.setState({page: 'gal'});
-        let a = document.getElementById("gal");
-        let b = document.getElementById("shivangi");
-        let c = document.getElementById("anujeet");
-        let d = document.getElementById("vaibhav");
-        let e = document.getElementById("us");
-        let f = document.getElementById("mon");
-        let g = document.getElementById("all");
+        // let a = document.getElementById("gal");
+        // let b = document.getElementById("shivangi");
+        // let c = document.getElementById("anujeet");
+        // let d = document.getElementById("vaibhav");
+        // let e = document.getElementById("us");
+        // let f = document.getElementById("mon");
+        // let g = document.getElementById("all");
 
-		this.galref.classList.add("nav-active");
-		this.shivangiref.classList.remove("nav-active");
-		this.anujeetref.classList.remove("nav-active");
-		this.vaibhavref.classList.remove("nav-active");
-		this.usref.classList.remove("nav-active");
-		this.monref.classList.remove("nav-active");
-		this.allref.classList.remove("nav-active");
+		// this.galref.classList.add("nav-active");
+		// this.shivangiref.classList.remove("nav-active");
+		// this.anujeetref.classList.remove("nav-active");
+		// this.vaibhavref.classList.remove("nav-active");
+		// this.usref.classList.remove("nav-active");
+		// this.monref.classList.remove("nav-active");
+		// this.allref.classList.remove("nav-active");
     }
     navChangePageShivangi = ()=> {
         this.setState({page: 'shivangi'})
     
-        let a = document.getElementById("gal");
-        let b = document.getElementById("shivangi");
-        let c = document.getElementById("anujeet");
-        let d = document.getElementById("vaibhav");
-        let e = document.getElementById("us");
-        let f = document.getElementById("mon");
-        let g = document.getElementById("all");
+        // let a = document.getElementById("gal");
+        // let b = document.getElementById("shivangi");
+        // let c = document.getElementById("anujeet");
+        // let d = document.getElementById("vaibhav");
+        // let e = document.getElementById("us");
+        // let f = document.getElementById("mon");
+        // let g = document.getElementById("all");
 
-        this.galref.classList.remove("nav-active");
-		this.shivangiref.classList.add("nav-active");
-		this.anujeetref.classList.remove("nav-active");
-		this.vaibhavref.classList.remove("nav-active");
-		this.usref.classList.remove("nav-active");
-		this.monref.classList.remove("nav-active");
-		this.allref.classList.remove("nav-active");
+        // this.galref.classList.remove("nav-active");
+		// this.shivangiref.classList.add("nav-active");
+		// this.anujeetref.classList.remove("nav-active");
+		// this.vaibhavref.classList.remove("nav-active");
+		// this.usref.classList.remove("nav-active");
+		// this.monref.classList.remove("nav-active");
+		// this.allref.classList.remove("nav-active");
     }
     navChangePageAnujeet = ()=> {
         this.setState({page: 'anujeet'})
     
-		this.a.classList.remove("nav-active");
-		this.b.classList.remove("nav-active");
-		this.c.classList.add("nav-active");
-		this.d.classList.remove("nav-active");
-		this.e.classList.remove("nav-active");
-		this.f.classList.remove("nav-active");
-		this.g.classList.remove("nav-active");
+		// this.a.classList.remove("nav-active");
+		// this.b.classList.remove("nav-active");
+		// this.c.classList.add("nav-active");
+		// this.d.classList.remove("nav-active");
+		// this.e.classList.remove("nav-active");
+		// this.f.classList.remove("nav-active");
+		// this.g.classList.remove("nav-active");
     }
     navChangePageVaibhav = ()=> {
         this.setState({page: 'vaibhav'})
     
-		this.a.classList.remove("nav-active");
-		this.b.classList.remove("nav-active");
-		this.c.classList.remove("nav-active");
-		this.d.classList.add("nav-active");
-		this.e.classList.remove("nav-active");
-		this.f.classList.remove("nav-active");
-		this.g.classList.remove("nav-active");
+	// 	this.a.classList.remove("nav-active");
+	// 	this.b.classList.remove("nav-active");
+	// 	this.c.classList.remove("nav-active");
+	// 	this.d.classList.add("nav-active");
+	// 	this.e.classList.remove("nav-active");
+	// 	this.f.classList.remove("nav-active");
+	// 	this.g.classList.remove("nav-active");
     }
     navChangePageUS = ()=> {
         this.setState({page: 'us'})
     
-		this.a.classList.remove("nav-active");
-		this.b.classList.remove("nav-active");
-		this.c.classList.remove("nav-active");
-		this.d.classList.remove("nav-active");
-		this.e.classList.add("nav-active");
-		this.f.classList.remove("nav-active");
-		this.g.classList.remove("nav-active");
+		// this.a.classList.remove("nav-active");
+		// this.b.classList.remove("nav-active");
+		// this.c.classList.remove("nav-active");
+		// this.d.classList.remove("nav-active");
+		// this.e.classList.add("nav-active");
+		// this.f.classList.remove("nav-active");
+		// this.g.classList.remove("nav-active");
     }
     navChangePageMon = ()=> {
         this.setState({page: 'mon'})
     
-		this.a.classList.remove("nav-active");
-		this.b.classList.remove("nav-active");
-		this.c.classList.remove("nav-active");
-		this.d.classList.remove("nav-active");
-		this.e.classList.remove("nav-active");
-		this.f.classList.add("nav-active");
-		this.g.classList.remove("nav-active");
+		// this.a.classList.remove("nav-active");
+		// this.b.classList.remove("nav-active");
+		// this.c.classList.remove("nav-active");
+		// this.d.classList.remove("nav-active");
+		// this.e.classList.remove("nav-active");
+		// this.f.classList.add("nav-active");
+		// this.g.classList.remove("nav-active");
     }
     navChangePageAll = ()=> {
         this.setState({page: 'all'})
     
-		this.a.classList.remove("nav-active");
-		this.b.classList.remove("nav-active");
-		this.c.classList.remove("nav-active");
-		this.d.classList.remove("nav-active");
-		this.e.classList.remove("nav-active");
-		this.f.classList.remove("nav-active");
-		this.g.classList.add("nav-active");
+		// this.a.classList.remove("nav-active");
+		// this.b.classList.remove("nav-active");
+		// this.c.classList.remove("nav-active");
+		// this.d.classList.remove("nav-active");
+		// this.e.classList.remove("nav-active");
+		// this.f.classList.remove("nav-active");
+		// this.g.classList.add("nav-active");
     }
     
 	GAL_STATES = {
