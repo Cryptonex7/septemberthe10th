@@ -1,0 +1,30 @@
+.gallery{
+    text-align: center;
+    margin: auto;
+}
+
+.gal-top{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2%;
+    margin-top: 2%;
+}
+
+.gal-bottom{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 2%;
+    margin-top: 2%;
+}
+
+.gal-foot{
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 2%;
+    margin-top: 2%;
+}
+
+.btn{
+    text-align: center;
+}
+

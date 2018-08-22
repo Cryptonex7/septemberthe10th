@@ -1,29 +1,6 @@
 import React, {Component} from'react';
+
 class Card extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = { 
-          height: window.innerHeight, 
-          width: window.innerWidth
-        };
-        this.updateDimensions = this.updateDimensions.bind(this);
-    }
-    
-      
-    componentDidMount() {
-        console.log(this.state.height);
-        window.addEventListener("resize", this.updateDimensions);
-    }
-    
-    updateDimensions() {
-        this.setState({
-            height: window.innerHeight, 
-            width: window.innerWidth
-        });
-    }
-
-
     render(){
 
         return(
@@ -41,9 +18,7 @@ class Card extends Component {
         );
     };
 
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updateDimensions);
-    }
+
 }
 
 export default Card;

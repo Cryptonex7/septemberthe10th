@@ -3,14 +3,11 @@ import '../../../css/StartButton.css';
 
 
 const StartButton = () => {
+    
     return(
-        <div className="">
-        <br/>
-        <br/>
-            <button id='startbtn'>Get Started</button>
-            <br/><br/><br/><br/><br/>
-        </div>
-
+            <div>
+                qwertyuiop
+            </div>
     );
 }
 

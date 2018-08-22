@@ -6,7 +6,6 @@ import Footer from './Footer';
 
 
 class MainContainer extends Component {
-
     constructor() {
         super();
         this.state = { 
@@ -17,39 +16,20 @@ class MainContainer extends Component {
     }
     
       
-      componentDidMount() {
+    componentDidMount() {
         console.log(this.state.height);
         window.addEventListener("resize", this.updateDimensions);
-      }
-      updateDimensions() {
+    }
+    updateDimensions() {
         this.setState({
-          height: window.innerHeight, 
-          width: window.innerWidth
+            height: window.innerHeight, 
+            width: window.innerWidth
         });
-      }
-
-    onColorChangeR =()=>{
-        console.log("press");
-        let x = document.getElementsByTagName("html")[0];
-        x.style.cssText = "--ac-primary: #BF0000" ;
-        console.log(x.style);
-    }
-    onColorChangeG =()=>{
-        console.log("press");
-        let x = document.getElementsByTagName("html")[0];
-        x.style.cssText = "--ac-primary: #00BF00" ;
-        console.log(x.style);
-    }
-    onColorChangeB =()=>{
-        console.log("press");
-        let x = document.getElementsByTagName("html")[0];
-        x.style.cssText = "--ac-primary: #0000BF" ;
-        console.log(x.style);
     }
     
-
     render(){
-
+        
+    
         
         return(
             
@@ -64,6 +44,7 @@ class MainContainer extends Component {
                 :
                     <div>
                         <BackgroundLogo/>
+                        <StartButton/>
                         <Footer/>
                     </div>
                 }
@@ -75,6 +56,7 @@ class MainContainer extends Component {
     componentWillUnmount() {
         window.removeEventListener("resize", this.updateDimensions);
     }
+    
    
 }
 

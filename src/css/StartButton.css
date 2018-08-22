@@ -1,40 +1,19 @@
 @import url(./variables.css);
 
-@keyframes glow-bkg {
-    0% {
-        filter: drop-shadow(0px 0px 1px var(--ac-white));
-    }
-    50% {
-        filter: drop-shadow(0px 0px 3px var(--ac-white));
-        
-    }
-    100% {
-        filter: drop-shadow(0px 0px 1px var(--ac-white));
-    }
-}
-@keyframes glow-bkg-mob {
-    0% {
-        filter: drop-shadow(0px 0px 3px var(--ac-white));
-    }
-    50% {
-        filter: drop-shadow(0px 0px 6px var(--ac-white));
-        
-    }
-    100% {
-        filter: drop-shadow(0px 0px 3px var(--ac-white));
-    }
-}
-
 #startbtn, button{
-    
+    margin: auto;
     padding: 10px 30px;
     font-size: 20px;
-    animation: glow-bkg 6000ms ease-in-out infinite;
-    
+    display: inline-block;
     vertical-align: middle;
-    border-radius: 10px;
-    background-color: var(--ac-primary);
+    border-radius: 5px;
+    background-color: #212121;
     color: var(--ac-white);
-    border: none;
+    opacity: 0.95;
+    box-shadow: 10px 7px 10px 0px #111;
+    border: 1px solid white;
     outline: none;
+    height: 200px;
+    min-width: 300px;
+    
 }
