@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../components/Home/NavBar/NavBar';
 import MainContainer from './MainContainer'
 import Friends from './Friends';
-import Gallery from './Gallery';
+import GalleryPage from './GalleryPage';
 
 import '../css/App.css';
 import '../css/Card.css';
@@ -57,7 +57,7 @@ class App extends Component {
 	PAGE_STATES = {
 		home: <MainContainer />,
 		friends: <Friends />,
-		gallery: <Gallery />,
+		gallery: <GalleryPage />,
 	};
 	
 

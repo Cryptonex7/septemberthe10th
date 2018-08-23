@@ -33,7 +33,7 @@ import v8 from "../../assets/Love/Vaibhav/v8_9x16.jpg";
 import v9 from "../../assets/Love/Vaibhav/v9_9x16.jpg";
 import v10 from"../../assets/Love/Vaibhav/v10.jpg";
 
-import m1 from "../../assets/Love/Mon/m1.jpg";
+import m1 from "../../assets/Love/Mon/m1.png";
 import m2 from "../../assets/Love/Mon/m2_3x4.jpg";
 import m3 from "../../assets/Love/Mon/m3_4x3.jpg";
 import m4 from "../../assets/Love/Mon/m4_9x16.jpg";
@@ -42,7 +42,7 @@ import m6 from "../../assets/Love/Mon/m6.jpg";
 import m7 from "../../assets/Love/Mon/m7_3x4.jpeg";
 import m8 from "../../assets/Love/Mon/m8_3x4.jpg";
 import m9 from "../../assets/Love/Mon/m9.jpg";
-import m10 from"../../assets/Love/Mon/m10_4x5.png";
+import m10 from"../../assets/Love/Mon/m10_4x5.jpg";
 
 import u1 from "../../assets/Love//Us/u1.jpg";
 import u2 from "../../assets/Love//Us/u2_16x9.jpg";
@@ -101,8 +101,8 @@ const ALL = [
     },
     {
         src: `${m1}`,
-        width: 1,
-        height: 1
+        width: 4,
+        height: 5
     },
     {
         src: `${m2}`,
@@ -146,8 +146,8 @@ const ALL = [
     },
     {
         src: `${m10}`,
-        width: 4,
-        height: 5
+        width: 1,
+        height: 1
     },
     {
         src: `${a1}`,

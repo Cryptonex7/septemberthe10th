@@ -81,6 +81,16 @@
     top:0;
     background: #000000e2;
 }
+.gal-nav{
+    padding-left: 10px;
+    text-align: right;
+    display: table; 
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top:41px;
+    background: #000000e2;
+}
 
 @media screen and (min-width: 30em) {
     .ph5-ns {

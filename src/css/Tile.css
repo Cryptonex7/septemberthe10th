@@ -1,7 +1,7 @@
 @import url(./variables.css);
 
-#startbtn, button{
-    margin: 1%;
+#tile{
+    margin: auto;
     padding: 10px 30px;
     font-size: 20px;
     display: inline-block;
@@ -13,7 +13,7 @@
     box-shadow: 10px 7px 10px 0px #111;
     border: 1px solid white;
     outline: none;
-    height: 70px;
+    height: 200px;
     min-width: 300px;
     
 }

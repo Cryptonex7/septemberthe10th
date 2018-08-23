@@ -1,11 +1,6 @@
 import React, {Component} from'react';
 import Button from  '../Home/Button/Button';
-import Shivangi from'./Shivangi';
-import Anujeet from './Anujeet';
-import Vaibhav from './Vaibhav';
-import Us from      './Us';
-import Mon from     './Mon';
-import All from     './All';
+import Tile from  './Tile';
 
 import sb from "../../assets/Love/Blurs/Sblur.jpg";
 import ab from "../../assets/Love/Blurs/Ablur.jpg";
@@ -22,22 +17,22 @@ class GalleryHome extends Component {
             <div>
                 <div className='gal-top'>
                     <div className='btn shivangi'>
-                        <Button click={()=>{this.props.upstate("shivangi")}} bkg={sb} btnText='Memories with Shivangi'/>            
+                        <Tile click={()=>{this.props.upstate("shivangi")}} bkg={sb} btnText='Memories with Shivangi'/>            
                     </div>
                     <div className='btn anujeet'>
-                        <Button click={()=>{this.props.upstate("anujeet")}} bkg={ab} btnText='Memories with Anujeet'/>            
+                        <Tile click={()=>{this.props.upstate("anujeet")}} bkg={ab} btnText='Memories with Anujeet'/>            
                     </div>
                     <div className='btn vaibhav'>
-                        <Button click={()=>{this.props.upstate("vaibhav")}} bkg={vb} btnText='Memories with Vaibhav'/>            
+                        <Tile click={()=>{this.props.upstate("vaibhav")}} bkg={vb} btnText='Memories with Vaibhav'/>            
                     </div>
                 </div>
                 
                 <div className='gal-bottom'>
                     <div className='btn us'>
-                        <Button click={()=>{this.props.upstate("us")}} bkg={ub} btnText='Memories with Us Together'/>            
+                        <Tile click={()=>{this.props.upstate("us")}} bkg={ub} btnText='Memories with Us Together'/>            
                     </div>
                     <div className='btn mon'>
-                        <Button click={()=>{this.props.upstate("mon")}} bkg={mb} btnText='Photos of Mansi'/>            
+                        <Tile click={()=>{this.props.upstate("mon")}} bkg={mb} btnText='Photos of Mansi'/>            
                     </div>
                 </div>
                 
