@@ -121,7 +121,7 @@ export default class GalleryPage extends Component {
                     </div>
                 :
                     <div>
-                        <Button Classname='sticky' click={()=>{this.navChangePage('gal')}} btnText='Back to Albums'/>
+                        <Button Classname='sticky' click={()=>{this.updateState('gal')}} btnText='Back to Albums'/>
                         {this.GAL_STATES[this.state.page]}
                     </div>
                 }
