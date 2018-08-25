@@ -49,6 +49,7 @@ class App extends Component {
 	}
 	
   render() {
+    console.log('App render started');
     return (
 				<div className="App">
 					<NavBar home = {this.updateState} friends = {this.updateState} gallery = {this.updateState} />
