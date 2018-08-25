@@ -9,10 +9,7 @@ import mb from "../../assets/Love/Blurs/Mblur.jpg";
 import ub from "../../assets/Love/Blurs/Ublur.jpg";
 
 class GalleryHome extends Component {
-
-    
     render(){
-
         return(
             <div>
                 <div className='gal-top'>
@@ -44,8 +41,6 @@ class GalleryHome extends Component {
             </div>
         );
     };
-
-
 }
 
 export default GalleryHome;

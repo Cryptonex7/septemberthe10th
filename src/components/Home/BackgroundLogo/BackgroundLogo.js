@@ -9,17 +9,13 @@ const BackgroundLogo = () => {
             <img className = 'BackgroundLogo' alt='logo' src = {logo}/>
             <br/>
             <img className = 'caption' alt='logo' src = {capt}/>
-
             
             <div className="intro">
             <p id='intro'>The day Nature created the </p>&nbsp;<p id='portfolio'> Finest Person</p><p id="intro">...</p>
             </div>
-            
             <br/>
         </div>
-
     );
 }
-
 
 export default BackgroundLogo;

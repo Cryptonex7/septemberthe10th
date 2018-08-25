@@ -70,6 +70,12 @@ a {
   cursor: pointer;
 }
 
+.sticky{
+  z-index: 9999;
+  box-sizing: border-box;
+  position: sticky;
+  top:91px;
+}
 
 @media only screen and (max-width: 800px){
   #intro , #portfolio{
@@ -78,6 +84,10 @@ a {
   body{
     background-position: left;
   }
+  .sticky{
+    top:75px;
+  }
+  
 }
 
 @media only screen and (max-width: 480px){
@@ -86,6 +96,10 @@ a {
   }
   p{
       font-size: 10px;
+  }
+
+  html{
+    line-height: 2em;
   }
 
   body{

@@ -1,12 +1,24 @@
 .col{
     display: inline-block;
     color: #ededed;
+    vertical-align: middle;
+}
+
+.col1, .col2{
+    vertical-align: middle;
+    margin: auto 0;
+}
+
+.mid-head{
+    font-size: 3em;
+    font-weight: 500;
 }
 
 .top{
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 5%;
+    grid-template-columns: 33% 33% 33%;
+    padding: 0% 5%;
+    
     grid-column-gap: 2%;
 }
 
@@ -20,7 +32,7 @@
 
 }
 
-.Footer .top{
+ .Foot-container{
     background: #1c1d1f92;
 }
 
@@ -29,6 +41,8 @@
     background-repeat: no-repeat;
     background-position: center;
     min-width: 300px;
+    margin: 1%;
+   
 }
 
 @media only screen and (max-width: 800px){
@@ -47,5 +61,6 @@
     .img{
         min-width: 100px;
         min-height: 100px;
+        margin-bottom: 5%;
     }
 }

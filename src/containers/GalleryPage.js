@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Button from '../components/Home/Button/Button';
 import GalleryHome from '../components//Gallery/GalleryHome';
 import Shivangi from '../components//Gallery/Shivangi';
@@ -10,7 +9,6 @@ import Mon from '../components//Gallery/Mon';
 import All from '../components//Gallery/All';
 import GalNav from '../components//Gallery/GalNav';
 
-
 import '../css/Gallery.css';
 
 export default class GalleryPage extends Component {
@@ -20,7 +18,6 @@ export default class GalleryPage extends Component {
           page: 'gal'
         };
         this.updateState = this.updateState.bind(this);
-        
     }
 
     navActive=(valstate)=>{
@@ -31,7 +28,6 @@ export default class GalleryPage extends Component {
         let e = document.getElementById("us");
         let f = document.getElementById("mon");
         let g = document.getElementById("all");
-        console.log("NavActive: " + this.state.page);
         switch(valstate){
             case "gal":     a.classList.add("nav-active");
                             b.classList.remove("nav-active");
@@ -95,7 +91,7 @@ export default class GalleryPage extends Component {
                             f.classList.remove("nav-active");
                             g.classList.add("nav-active");
                             break;
-            
+            default: console.log("Invalid State Value. State = " + valstate);
         }
     }
 
@@ -103,25 +99,15 @@ export default class GalleryPage extends Component {
         this.setState({page: `${statevar}`});
         this.navActive(`${statevar}`);
     }
-
-    returnState=()=>{
-        return this.state.page;
-    }
-   
-    navChangePage=(pageval)=>{
-        this.setState({page: `${pageval}`})
-        this.navActive(`${pageval}`);
-    
-    }
     
 	GAL_STATES = {
-		gal: <GalleryHome upstate={this.updateState}/>,
-		shivangi: <Shivangi />,
-        anujeet: <Anujeet />,
-        vaibhav: <Vaibhav/>,
-        us: <Us/>,
-        mon: <Mon/>,
-        all: <All/>
+		gal:        <GalleryHome upstate={this.updateState}/>,
+		shivangi:   <Shivangi />,
+        anujeet:    <Anujeet />,
+        vaibhav:    <Vaibhav/>,
+        us:         <Us/>,
+        mon:        <Mon/>,
+        all:        <All/>
 	};
 
     render() {
@@ -131,15 +117,15 @@ export default class GalleryPage extends Component {
                 {this.state.page === 'gal'
                 ?   <div>
                         {this.GAL_STATES[this.state.page]}
+                        <Button click={()=>{this.props.home('home')}} btnText='Back to Home'/>
                     </div>
                 :
                     <div>
-                        <Button click={()=>{this.navChangePage('gal')}} btnText='Back to Albums'/>
+                        <Button Classname='sticky' click={()=>{this.navChangePage('gal')}} btnText='Back to Albums'/>
                         {this.GAL_STATES[this.state.page]}
                     </div>
                 }
             </div>
         );
-        
     }
 }

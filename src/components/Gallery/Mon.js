@@ -1,29 +1,21 @@
 import Gallery from 'react-photo-gallery';
 import React, {Component} from'react';
 
-import m1 from "../../assets/Love/Mon/m1.png";
+import m1 from "../../assets/Love/Mon/m1.jpg";
 import m2 from "../../assets/Love/Mon/m2_3x4.jpg";
 import m3 from "../../assets/Love/Mon/m3_4x3.jpg";
 import m4 from "../../assets/Love/Mon/m4_9x16.jpg";
 import m5 from "../../assets/Love/Mon/m5.jpg";
 import m6 from "../../assets/Love/Mon/m6.jpg";
-import m7 from "../../assets/Love/Mon/m7_3x4.jpeg";
+import m7 from "../../assets/Love/Mon/m7_3x4.jpg";
 import m8 from "../../assets/Love/Mon/m8_3x4.jpg";
 import m9 from "../../assets/Love/Mon/m9.jpg";
 import m10 from"../../assets/Love/Mon/m10_4x5.jpg";
 
-
 class Mon extends Component {
     render(){
-
-        return(
-            <div>
-                <Gallery photos={MON}/>
-            </div>
-        );
+        return <Gallery photos={MON}/>;
     };
-
-
 }
 
 export default Mon;

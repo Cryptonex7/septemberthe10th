@@ -15,15 +15,8 @@ import a11 from"../../assets/Love/Anujeet/a11_4x5.jpg";
 
 class Anujeet extends Component {
     render(){
-
-        return(
-            <div>
-                <Gallery photos={ANUJEET}/>
-            </div>
-        );
+        return<Gallery photos={ANUJEET}/>;
     };
-
-
 }
 
 export default Anujeet;
@@ -84,5 +77,4 @@ const ANUJEET = [
       width: 4,
       height: 5
     }
-  
   ];

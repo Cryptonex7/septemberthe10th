@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import BackgroundLogo from '../components/Home/BackgroundLogo/BackgroundLogo';
-import StartButton from '../components/Home/StartButton/StartButton';
-import Footer from './Footer';
-
-
+import Midder from './Midder';
 
 class MainContainer extends Component {
     constructor() {
@@ -15,7 +12,6 @@ class MainContainer extends Component {
         this.updateDimensions = this.updateDimensions.bind(this);
     }
     
-      
     componentDidMount() {
         console.log(this.state.height);
         window.addEventListener("resize", this.updateDimensions);
@@ -28,36 +24,26 @@ class MainContainer extends Component {
     }
     
     render(){
-        
-    
-        
         return(
-            
-                <div className="maincont">
-                {this.state.width > 1000
-                ?   <div>
-                        
-                        <BackgroundLogo/><br/>
-                        <StartButton/>
-                        <Footer/>
-                    </div>
-                :
-                    <div>
-                        <BackgroundLogo/>
-                        <StartButton/>
-                        <Footer/>
-                    </div>
-                }
+            <div className="maincont">
+            {this.state.width > 1000
+            ?   <div>
+                    <BackgroundLogo/><br/>
+                    <br/><br/>
+                    <Midder NextButton={this.props.friends}/>
                 </div>
-            
-            
+            :
+                <div>
+                    <BackgroundLogo/><br/>
+                    <Midder NextButton={()=>{this.props.friends()}}/>
+                </div>
+            }
+            </div>
         );
     }
     componentWillUnmount() {
         window.removeEventListener("resize", this.updateDimensions);
     }
-    
-   
 }
 
 export default MainContainer;

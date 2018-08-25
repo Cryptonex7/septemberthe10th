@@ -6,18 +6,10 @@ import u2 from "../../assets/Love//Us/u2_16x9.jpg";
 import u3 from "../../assets/Love//Us/u3_3x4.jpg";
 import u4 from "../../assets/Love//Us/u4_3x2.jpg";
 
-
 class Us extends Component {
     render(){
-
-        return(
-            <div>
-                <Gallery photos={US}/>
-            </div>
-        );
+        return <Gallery photos={US}/>;
     };
-
-
 }
 
 export default Us;

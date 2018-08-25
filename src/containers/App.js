@@ -3,71 +3,57 @@ import NavBar from '../components/Home/NavBar/NavBar';
 import MainContainer from './MainContainer'
 import Friends from './Friends';
 import GalleryPage from './GalleryPage';
+import Footer from './Footer';
 
 import '../css/App.css';
 import '../css/Card.css';
-import '../css/IntroBar.css';
-import '../css/Subscribe.css';
-
-
-
 
 class App extends Component {
   state = { 
     page: 'home'
 	}
   
-	navChangePageHome = ()=> {
-		this.setState({page: 'home'})
-	
-		let x = document.getElementById("home");
-		let y = document.getElementById("friends");
-		let z = document.getElementById("gallery");
-		
-		x.classList.add("nav-active");
-		y.classList.remove("nav-active");
-		z.classList.remove("nav-active");
-	}
-
-	navChangePageFriends = ()=> {
-		this.setState({page: 'friends'})
-		
-		let x = document.getElementById("friends");
-		let y = document.getElementById("gallery");
-		let z = document.getElementById("home");
-		
-		x.classList.add("nav-active");
-		y.classList.remove("nav-active");
-		z.classList.remove("nav-active");
-	}
-	
-	navChangePageGallery = ()=> {
-		this.setState({page: 'gallery'})
-		let x = document.getElementById("gallery");
-		let y = document.getElementById("friends");
-		let z = document.getElementById("home");
-		
-		x.classList.add("nav-active");
-		y.classList.remove("nav-active");
-		z.classList.remove("nav-active");
-		
-	}
-
-
 	PAGE_STATES = {
-		home: <MainContainer />,
-		friends: <Friends />,
-		gallery: <GalleryPage />,
+		home: <MainContainer friends = 	{()=>{this.updateState('friends')}} />,
+		friends: <Friends gallery = 	{()=>{this.updateState('gallery')}} />,
+		gallery: <GalleryPage home = 	{()=>{this.updateState('home')}} />,
 	};
 	
+	navActive=(valstate)=>{
+        let a = document.getElementById("home");
+        let b = document.getElementById("friends");
+        let c = document.getElementById("gallery");
+        
+        switch(valstate){
+            case "home":    a.classList.add("nav-active");
+                            b.classList.remove("nav-active");
+                            c.classList.remove("nav-active");
+                            break;
 
+            case "friends": a.classList.remove("nav-active");
+                            b.classList.add("nav-active");
+                            c.classList.remove("nav-active");
+                            break;
 
+            case "gallery": a.classList.remove("nav-active");
+                            b.classList.remove("nav-active");
+                            c.classList.add("nav-active");
+                            break;
+            default: console.log("Invalid State Value. State = " + valstate);
+        }
+	}
+	
+    updateState=(pageval)=>{
+        this.setState({page: `${pageval}`})
+        this.navActive(`${pageval}`);
+	}
+	
   render() {
-    
     return (
 				<div className="App">
-					<NavBar home = {this.navChangePageHome} gallery = {this.navChangePageGallery} friends = {this.navChangePageFriends}/>
+					<NavBar home = {this.updateState} friends = {this.updateState} gallery = {this.updateState} />
 						{this.PAGE_STATES[this.state.page]}
+					<Footer/>
 				</div>
     );
   }

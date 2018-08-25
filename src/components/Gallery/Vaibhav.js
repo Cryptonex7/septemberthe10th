@@ -12,18 +12,10 @@ import v8 from "../../assets/Love/Vaibhav/v8_9x16.jpg";
 import v9 from "../../assets/Love/Vaibhav/v9_9x16.jpg";
 import v10 from"../../assets/Love/Vaibhav/v10.jpg";
 
-
 class Vaibhav extends Component {
     render(){
-
-        return(
-            <div>
-                <Gallery photos={VAIBHAV}/>
-            </div>
-        );
+        return <Gallery photos={VAIBHAV}/>;
     };
-
-
 }
 
 export default Vaibhav;

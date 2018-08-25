@@ -16,7 +16,7 @@
 
 .link {
     text-decoration: none;
-    transition: color .15s ease-in;
+    transition: color 150ms ease-in;
     color: #4d4d4f;
     font-size: .875rem;
     display: inline-block;
@@ -26,19 +26,19 @@
 }
 
 .link:link, .link:visited {
-    transition: color .15s ease-in;
+    transition: color 150ms ease-in;
 }
 
 .link:hover {
-    transition: color .15s ease-in;
+    transition: color 150ms ease-in;
 }
 
 .link:active {
-    transition: color .15s ease-in;
+    transition: color 350ms ease-in;
 }
 
 .link:focus {
-    transition: color .15s ease-in;
+    transition: color 150ms ease-in;
     outline: 1px dotted currentColor;
 }
 
@@ -48,17 +48,17 @@
 
 .dim {
     opacity: 1;
-    transition: opacity .15s ease-in;
+    transition: opacity 150ms ease-in;
 }
 
 .dim:hover, .dim:focus {
     opacity: .5;
-    transition: opacity .15s ease-in;
+    transition: opacity 150ms ease-in;
 }
 
 .dim:active {
     opacity: .8;
-    transition: opacity .15s ease-out;
+    transition: opacity 150ms ease-out;
 }
 
 #services, #blog {
@@ -79,9 +79,12 @@
     box-sizing: border-box;
     position: sticky;
     top:0;
-    background: #000000e2;
+    background: #000000;
+    z-index: 999;
 }
 .gal-nav{
+    z-index: 999;
+
     padding-left: 10px;
     text-align: right;
     display: table; 
@@ -89,7 +92,7 @@
     box-sizing: border-box;
     position: sticky;
     top:41px;
-    background: #000000e2;
+    background: #101010;
 }
 
 @media screen and (min-width: 30em) {
@@ -104,5 +107,17 @@
 
     .f5-ns {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .gal-nav{
+        top: 24px;
+    }
+
+    .dim:hover, .link:hover, .link:focus, .dim:focus, 
+    .dim:active, .link:active, .link:visited, .link:link, 
+    .link, .dim {
+        opacity: 1;
     }
 }

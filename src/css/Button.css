@@ -17,3 +17,13 @@
     min-width: 300px;
     
 }
+
+@media only screen and (max-width: 800px){
+    #startbtn, button{
+        font-size: 10px;
+        height: 35px;
+        display: block;
+        min-width: 150px;
+        margin: 10px auto;
+    }
+}

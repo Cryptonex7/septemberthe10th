@@ -10,18 +10,10 @@ import s6 from "../../assets/Love/Shivangi/s6.jpg";
 import s7 from "../../assets/Love/Shivangi/s7_3x4.jpg";
 import s8 from "../../assets/Love/Shivangi/s8_3x4.jpeg";
 
-
 class Shivangi extends Component {
     render(){
-
-        return(
-            <div>
-                <Gallery photos={SHIVANGI}/>
-            </div>
-        );
+        return <Gallery photos={SHIVANGI}/>;
     };
-
-
 }
 
 export default Shivangi;

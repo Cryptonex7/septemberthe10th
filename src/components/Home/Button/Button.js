@@ -1,17 +1,15 @@
 import React from 'react';
-import '../../../css/StartButton.css';
+import '../../../css/Button.css';
 
-
-const StartButton = ({btnText, bkg, click}) => {
+const StartButton = ({btnText, bkg, click, Classname}) => {
     const styles = {
         backgroundImage: `url(${bkg})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
-      }
-    return(
-            <button onClick={click} style={styles} id='startbtn'>{`${btnText}`}</button>
-    );
+    }
+    
+    return <button onClick={click} style={styles} className={`${Classname}`} id='startbtn'>{`${btnText}`}</button>;
 }
 
 

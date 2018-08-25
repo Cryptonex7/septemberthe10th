@@ -45,7 +45,7 @@
         left: 0;
     }
     .BackgroundLogo {
-        margin-left: -32px;
+        
         animation: glow-bkg-mob 6000ms ease-in-out infinite;
     
     }

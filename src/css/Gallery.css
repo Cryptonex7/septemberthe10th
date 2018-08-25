@@ -1,6 +1,7 @@
 .gallery{
     text-align: center;
     margin: auto;
+    z-index: -1;
 }
 
 .gal-top{
@@ -28,3 +29,11 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 800px){
+    .gal-top, .gal-bottom, .gal-foot{
+        display: block;
+        font-size: 10px;
+        z-index: -1;
+
+    }
+}
