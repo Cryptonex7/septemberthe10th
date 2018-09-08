@@ -18,6 +18,24 @@
     
 }
 
+#small-tile{
+    margin: auto;
+    padding: 10px 30px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    background-color: #212121;
+    color: var(--ac-white);
+    opacity: 0.95;
+    box-shadow: 10px 7px 10px 0px #111;
+    border: 1px solid white;
+    outline: none;
+    height: 80px;
+    min-width: 300px;
+    
+}
+
 
 @media only screen and (max-width: 800px){
     #tile{

@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import '../../../css/Button.css';
 
-const StartButton = ({btnText, bkg, click, Classname}) => {
+const StartButton = ({btnText, bkg, click, route, Classname}) => {
     const styles = {
         backgroundImage: `url(${bkg})`,
         backgroundSize: 'cover',
@@ -9,7 +10,7 @@ const StartButton = ({btnText, bkg, click, Classname}) => {
         backgroundPosition: 'center'
     }
     
-    return <button onClick={click} style={styles} className={`${Classname}`} id='startbtn'>{`${btnText}`}</button>;
+    return <Link to={`${route}`}><button onClick={click} style={styles} className={`${Classname}`} id='startbtn'>{`${btnText}`}</button></Link>;
 }
 
 

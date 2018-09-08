@@ -9,7 +9,7 @@ const Tile = ({btnText, bkg, route, click}) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
     }
-    return <Link to={`${route}`}><button onClick={click} style={styles} id='tile'>{`${btnText}`}</button></Link>;
+    return <Link to={`${route}`}><button onClick={click} style={styles} id='small-tile'>{`${btnText}`}</button></Link>;
 }
 
 export default Tile;

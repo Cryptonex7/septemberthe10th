@@ -11,14 +11,13 @@ class MainContainer extends Component {
         };
         this.updateDimensions = this.updateDimensions.bind(this);
     }
-
-    componentDidMount() {
-        window.scrollTo(0, 0)
-    }
     
     componentDidMount() {
         console.log(this.state.height);
         window.addEventListener("resize", this.updateDimensions);
+
+        window.scrollTo(0, 0)
+
     }
     updateDimensions() {
         this.setState({

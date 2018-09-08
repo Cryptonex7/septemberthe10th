@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import NavBar from '../components/Home/NavBar/NavBar';
-import MainContainer from './MainContainer'
-import Friends from './Friends';
-import GalleryPage from './GalleryPage';
 import Footer from './Footer';
+import MainRouter from './MainRouter';
 
 import '../css/App.css';
 import '../css/Card.css';
@@ -14,15 +11,15 @@ class App extends Component {
     page: 'home'
 	}
   
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
+	componentDidMount() {
+		window.scrollTo(0, 0)
+	}
 
-	PAGE_STATES = {
-		home: <MainContainer friends = 	{()=>{this.updateState('friends')}} />,
-		friends: <Friends gallery = 	{()=>{this.updateState('gallery')}} />,
-		gallery: <GalleryPage home = 	{()=>{this.updateState('home')}} />,
-	};
+	// PAGE_STATES = {
+	// 	home: <MainContainer friends = 	{()=>{this.updateState('friends')}} />,
+	// 	friends: <Friends gallery = 	{()=>{this.updateState('gallery')}} />,
+	// 	gallery: <GalleryPage home = 	{()=>{this.updateState('home')}} />,
+	// };
 	
 	navActive=(valstate)=>{
         let a = document.getElementById("home");
@@ -57,11 +54,10 @@ class App extends Component {
 		console.log('App render started');
 		return (
 			<div className="App">
-				<NavBar home = {this.updateState} friends = {this.updateState} gallery = {this.updateState} />
+				<NavBar upstate = {this.updateState}/>
 
-				<BrowserRouter>
-					{this.PAGE_STATES[this.state.page]}
-				</BrowserRouter>	
+				<MainRouter upstate={this.updateState}/>
+					{/* {this.PAGE_STATES[this.state.page]} */}
 
 				<Footer/>
 			</div>

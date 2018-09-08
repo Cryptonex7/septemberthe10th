@@ -27,6 +27,7 @@
 
 .name{
     font-size: 1.7rem;
-    font-weight: 500;
-    color: var(--ac-red);
+    font-weight: 700;
+    color: var(--ac-white);
+    opacity: 0.9;
 }

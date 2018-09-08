@@ -44,7 +44,8 @@ class MainContainer extends Component {
                         <Card person = {this.state.friend.Vaibhav}/>
                         <Card person = {this.state.friend.Anujeet}/>
                 </div>
-                <Button click={()=>{this.props.gallery('gallery')}} btnText='Go to Next Section'/>
+                {/* <Button click={()=>{this.props.gallery('gallery')}} btnText='Go to Next Section'/> */}
+                <Button route='/gallery' click={()=>{this.props.gallery('gallery')}} btnText='Go to Next Section'/>
             </div>
         );
     }

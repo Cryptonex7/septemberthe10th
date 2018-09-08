@@ -54,13 +54,14 @@ class Footer extends Component {
                             <b>for the <span className='red-text'>first</span> time in my life I saw your <span className='red-text'>eyes</span></b>. 
                             <br/><br/>
                             Those 3-5 seconds of our eye contact felt <br/>
-                            like ages to me, and I'd <span className='red-text'>never</span> forgotten <br/>
+                            like ages to me, and I've <span className='red-text'>never</span> forgotten <br/>
                             your eyes since that day." <br/><br/>
                         </p>
                     </div>
                 </div>
            
-                <Button click={()=>{this.props.NextButton('friends')}} btnText='Go to Next Section'/>
+                {/* <Button click={()=>{this.props.NextButton('friends')}} btnText='Go to Next Section'/> */}
+                <Button route='/friends' click={()=>{this.props.NextButton('friends')}} btnText='Go to Next Section'/>
             </div>
         );
     };

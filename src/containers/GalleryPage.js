@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../components/Home/Button/Button';
-import GalleryHome from '../components//Gallery/GalleryHome';
-import Shivangi from '../components//Gallery/Shivangi';
-import Anujeet from '../components//Gallery/Anujeet';
-import Vaibhav from '../components//Gallery/Vaibhav';
-import Us from '../components//Gallery/Us';
-import Mon from '../components//Gallery/Mon';
-import All from '../components//Gallery/All';
+import GalRouter from './GalRouter';
+
 import GalNav from '../components//Gallery/GalNav';
 
 import '../css/Gallery.css';
@@ -104,15 +99,15 @@ export default class GalleryPage extends Component {
         this.navActive(`${statevar}`);
     }
     
-	GAL_STATES = {
-		gal:        <GalleryHome upstate={this.updateState}/>,
-		shivangi:   <Shivangi />,
-        anujeet:    <Anujeet />,
-        vaibhav:    <Vaibhav/>,
-        us:         <Us/>,
-        mon:        <Mon/>,
-        all:        <All/>
-    };
+	// GAL_STATES = {
+	// 	gal:        <GalleryHome upstate={this.updateState}/>,
+	// 	shivangi:   <Shivangi />,
+    //     anujeet:    <Anujeet />,
+    //     vaibhav:    <Vaibhav/>,
+    //     us:         <Us/>,
+    //     mon:        <Mon/>,
+    //     all:        <All/>
+    // };
     
 
     render() {
@@ -121,13 +116,15 @@ export default class GalleryPage extends Component {
                 <GalNav pagechange={this.updateState}/>
                 {this.state.page === 'gal'
                 ?   <div>
-                        {this.GAL_STATES[this.state.page]}
-                        <Button click={()=>{this.props.home('home')}} btnText='Back to Home'/>
+                        <GalRouter upstate={this.updateState}/>
+                        {/* {this.GAL_STATES[this.state.page]} */}
+                        <Button route='/' click={()=>{this.props.home('home')}} btnText='Back to Home'/>
                     </div>
                 :
                     <div>
-                        <Button Classname='sticky' click={()=>{this.updateState('gal')}} btnText='Back to Albums'/>
-                        {this.GAL_STATES[this.state.page]}
+                        <Button route='/gallery' Classname='sticky' click={()=>{this.updateState('gal')}} btnText='Back to Albums'/>
+                        <GalRouter upstate={this.updateState}/>
+                        {/* {this.GAL_STATES[this.state.page]} */}
                     </div>
                 }
             </div>

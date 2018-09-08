@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom';
 import React from 'react';
 import '../../css/NavBar.css';
 
@@ -11,13 +12,49 @@ class GalNav extends React.Component{
                 </div>
                 
                 <div className="link-container v-mid">
-                    <a  className="link dim mr4-ns nav-active"  id='gal'        onClick={()=>{this.props.pagechange('gal')}} >Albums</a>
-                    <a  className="link dim mr4-ns"             id='shivangi'   onClick={()=>{this.props.pagechange('shivangi')}} >Shivangi</a>
-                    <a  className="link dim mr4-ns"             id='anujeet'    onClick={()=>{this.props.pagechange('anujeet')}} >Anujeet</a>
-                    <a  className="link dim"                    id='vaibhav'    onClick={()=>{this.props.pagechange('vaibhav')}} >Vaibhav</a>
-                    <a  className="link dim"                    id='us'         onClick={()=>{this.props.pagechange('us')}} >Us Together</a>
-                    <a  className="link dim"                    id='mon'        onClick={()=>{this.props.pagechange('mon')}} >Photos of Mansi</a>
-                    <a  className="link dim"                    id='all'        onClick={()=>{this.props.pagechange('all')}} >All Photos</a>
+                    <NavLink to='/gallery'  
+                        className="link dim mr4-ns nav-active"  
+                        activeClassName="link-active nav-active"
+                        id='gal'        
+                        onClick={()=>{this.props.pagechange('gal')}} >      
+                        Albums          
+                    </NavLink>
+                    <Link  to='/gallery/shivangi'
+                        className="link dim mr4-ns"             
+                        id='shivangi'   
+                        onClick={()=>{this.props.pagechange('shivangi')}} > 
+                        Shivangi        
+                    </Link>
+                    <Link  to='/gallery/anujeet'
+                        className="link dim mr4-ns"             
+                        id='anujeet'    
+                        onClick={()=>{this.props.pagechange('anujeet')}} >  
+                        Anujeet         
+                    </Link>
+                    <Link  to='/gallery/vaibhav'
+                        className="link dim"                    
+                        id='vaibhav'    
+                        onClick={()=>{this.props.pagechange('vaibhav')}} >  
+                        Vaibhav         
+                    </Link>
+                    <Link  to='/gallery/us'
+                        className="link dim"                    
+                        id='us'         
+                        onClick={()=>{this.props.pagechange('us')}} >       
+                        Us Together     
+                    </Link>
+                    <Link  to='/gallery/mansi'
+                        className="link dim"                    
+                        id='mon'        
+                        onClick={()=>{this.props.pagechange('mon')}} >      
+                        Photos of Mansi 
+                    </Link>
+                    <Link  to='/gallery/all'
+                        className="link dim"                    
+                        id='all'        
+                        onClick={()=>{this.props.pagechange('all')}} >      
+                        All Photos      
+                    </Link>
                 </div>
             </div>
         );
