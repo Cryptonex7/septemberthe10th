@@ -11,6 +11,10 @@ class MainContainer extends Component {
         };
         this.updateDimensions = this.updateDimensions.bind(this);
     }
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     
     componentDidMount() {
         console.log(this.state.height);

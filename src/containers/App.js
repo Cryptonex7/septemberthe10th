@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import NavBar from '../components/Home/NavBar/NavBar';
 import MainContainer from './MainContainer'
 import Friends from './Friends';
@@ -13,6 +14,10 @@ class App extends Component {
     page: 'home'
 	}
   
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
 	PAGE_STATES = {
 		home: <MainContainer friends = 	{()=>{this.updateState('friends')}} />,
 		friends: <Friends gallery = 	{()=>{this.updateState('gallery')}} />,
@@ -48,16 +53,20 @@ class App extends Component {
         this.navActive(`${pageval}`);
 	}
 	
-  render() {
-    console.log('App render started');
-    return (
-				<div className="App">
-					<NavBar home = {this.updateState} friends = {this.updateState} gallery = {this.updateState} />
-						{this.PAGE_STATES[this.state.page]}
-					<Footer/>
-				</div>
-    );
-  }
+	render() {
+		console.log('App render started');
+		return (
+			<div className="App">
+				<NavBar home = {this.updateState} friends = {this.updateState} gallery = {this.updateState} />
+
+				<BrowserRouter>
+					{this.PAGE_STATES[this.state.page]}
+				</BrowserRouter>	
+
+				<Footer/>
+			</div>
+		);
+	}
 }
 
 export default App;

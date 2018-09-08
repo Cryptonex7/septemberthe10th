@@ -9,6 +9,9 @@ import mb from "../../assets/Love/Blurs/Mblur.jpg";
 import ub from "../../assets/Love/Blurs/Ublur.jpg";
 
 class GalleryHome extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render(){
         return(
             <div>

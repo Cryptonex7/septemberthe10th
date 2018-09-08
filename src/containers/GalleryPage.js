@@ -20,6 +20,10 @@ export default class GalleryPage extends Component {
         this.updateState = this.updateState.bind(this);
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     navActive=(valstate)=>{
         let a = document.getElementById("gal");
         let b = document.getElementById("shivangi");
@@ -108,7 +112,8 @@ export default class GalleryPage extends Component {
         us:         <Us/>,
         mon:        <Mon/>,
         all:        <All/>
-	};
+    };
+    
 
     render() {
         return(
